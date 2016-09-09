@@ -4,7 +4,7 @@
 
 ## Why?
 
-`- "New is always better"`
+`- "New is always better", Barney Stinson`
 
 Old School - blocks CSS, Images, AND JS
 
