@@ -4,7 +4,7 @@
 
 ## Why?
 
-### "New is always better"
+`- "New is always better"`
 
 Old School - blocks CSS, Images, AND JS
 
@@ -51,7 +51,7 @@ New School - loads as non-blocking too, hower Nautilus.js doesn't care if it's a
 </script>
 ```
 
-## What's the biggest difference about the [current script top loaders](http://www.creativebloq.com/javascript/essential-javascript-top-five-script-loaders-8122862)?
+## What's the biggest difference about the [current top script loaders](http://www.creativebloq.com/javascript/essential-javascript-top-five-script-loaders-8122862)?
 
 Nautilus can define namespaces to script paths/links and you can manage easily.
 
