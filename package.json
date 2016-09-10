@@ -1,0 +1,36 @@
+{
+  "name": "nautilus",
+  "version": "0.0.1",
+  "description": "Async JavaScript loader & dependency manager",
+  "main": "nautilus.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphamorim/nautilus.js.git"
+  },
+  "keywords": [
+    "async",
+    "loader",
+    "dependency",
+    "manager",
+    "namespace"
+  ],
+  "author": "Raphael Amorim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphamorim/nautilus.js/issues"
+  },
+  "homepage": "https://github.com/raphamorim/nautilus.js#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "gulp": "^3.9.0",
+    "grunt-run": "^0.5.2",
+    "mocha": "2.3.4",
+    "mocha-phantomjs": "4.0.2",
+    "chai": "3.4.1"
+  }
+}

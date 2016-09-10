@@ -1,0 +1,387 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/raphael.amorim/.nvm/versions/node/v6.1.0/bin/node',
+1 verbose cli   '/Users/raphael.amorim/.nvm/versions/node/v6.1.0/bin/npm',
+1 verbose cli   'i' ]
+2 info using npm@3.8.6
+3 info using node@v6.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData grunt
+20 silly mapToRegistry name grunt
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry http://artifactory.globoi.com/artifactory/api/npm/npm-repos
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'grunt',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   name: 'grunt',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+25 silly fetchNamedPackageData grunt-contrib-uglify
+26 silly mapToRegistry name grunt-contrib-uglify
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry http://artifactory.globoi.com/artifactory/api/npm/npm-repos
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'grunt-contrib-uglify',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   name: 'grunt-contrib-uglify',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-uglify
+31 silly fetchNamedPackageData grunt-contrib-watch
+32 silly mapToRegistry name grunt-contrib-watch
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry http://artifactory.globoi.com/artifactory/api/npm/npm-repos
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'grunt-contrib-watch',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   name: 'grunt-contrib-watch',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-watch
+37 silly fetchNamedPackageData gulp
+38 silly mapToRegistry name gulp
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry http://artifactory.globoi.com/artifactory/api/npm/npm-repos
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: 'gulp',
+41 silly mapToRegistry   scope: null,
+41 silly mapToRegistry   name: 'gulp',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/gulp
+43 silly fetchNamedPackageData grunt-run
+44 silly mapToRegistry name grunt-run
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry http://artifactory.globoi.com/artifactory/api/npm/npm-repos
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'grunt-run',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   name: 'grunt-run',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-run
+49 silly fetchNamedPackageData mocha
+50 silly mapToRegistry name mocha
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry http://artifactory.globoi.com/artifactory/api/npm/npm-repos
+53 silly mapToRegistry data Result {
+53 silly mapToRegistry   raw: 'mocha',
+53 silly mapToRegistry   scope: null,
+53 silly mapToRegistry   name: 'mocha',
+53 silly mapToRegistry   rawSpec: '',
+53 silly mapToRegistry   spec: 'latest',
+53 silly mapToRegistry   type: 'tag' }
+54 silly mapToRegistry uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha
+55 silly fetchNamedPackageData mocha-phantomjs
+56 silly mapToRegistry name mocha-phantomjs
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry http://artifactory.globoi.com/artifactory/api/npm/npm-repos
+59 silly mapToRegistry data Result {
+59 silly mapToRegistry   raw: 'mocha-phantomjs',
+59 silly mapToRegistry   scope: null,
+59 silly mapToRegistry   name: 'mocha-phantomjs',
+59 silly mapToRegistry   rawSpec: '',
+59 silly mapToRegistry   spec: 'latest',
+59 silly mapToRegistry   type: 'tag' }
+60 silly mapToRegistry uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha-phantomjs
+61 silly fetchNamedPackageData chai
+62 silly mapToRegistry name chai
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry http://artifactory.globoi.com/artifactory/api/npm/npm-repos
+65 silly mapToRegistry data Result {
+65 silly mapToRegistry   raw: 'chai',
+65 silly mapToRegistry   scope: null,
+65 silly mapToRegistry   name: 'chai',
+65 silly mapToRegistry   rawSpec: '',
+65 silly mapToRegistry   spec: 'latest',
+65 silly mapToRegistry   type: 'tag' }
+66 silly mapToRegistry uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/chai
+67 verbose request uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-run
+68 verbose request no auth needed
+69 info attempt registry request try #1 at 6:16:42 PM
+70 verbose request id bed7f3af979987bb
+71 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-run
+72 verbose request uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha-phantomjs
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 6:16:43 PM
+75 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha-phantomjs
+76 verbose request uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-uglify
+77 verbose request no auth needed
+78 info attempt registry request try #1 at 6:16:43 PM
+79 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-uglify
+80 verbose request uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 6:16:43 PM
+83 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+84 verbose request uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-watch
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 6:16:43 PM
+87 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-watch
+88 verbose request uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/gulp
+89 verbose request no auth needed
+90 info attempt registry request try #1 at 6:16:43 PM
+91 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/gulp
+92 verbose request uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha
+93 verbose request no auth needed
+94 info attempt registry request try #1 at 6:16:43 PM
+95 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha
+96 verbose request uri http://artifactory.globoi.com/artifactory/api/npm/npm-repos/chai
+97 verbose request no auth needed
+98 info attempt registry request try #1 at 6:16:43 PM
+99 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/chai
+100 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+101 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+102 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+103 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+104 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+105 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+106 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+107 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+108 info attempt registry request try #2 at 6:18:08 PM
+109 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-uglify
+110 info attempt registry request try #2 at 6:18:08 PM
+111 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha-phantomjs
+112 info attempt registry request try #2 at 6:18:08 PM
+113 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+114 info attempt registry request try #2 at 6:18:08 PM
+115 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/gulp
+116 info attempt registry request try #2 at 6:18:08 PM
+117 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-watch
+118 info attempt registry request try #2 at 6:18:08 PM
+119 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-run
+120 info attempt registry request try #2 at 6:18:08 PM
+121 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/chai
+122 info attempt registry request try #2 at 6:18:08 PM
+123 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha
+124 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+125 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+126 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+127 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+128 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+129 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+130 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+131 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 201.7.191.90:80
+132 info attempt registry request try #3 at 6:20:23 PM
+133 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-uglify
+134 info attempt registry request try #3 at 6:20:23 PM
+135 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha-phantomjs
+136 info attempt registry request try #3 at 6:20:23 PM
+137 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+138 info attempt registry request try #3 at 6:20:23 PM
+139 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha
+140 info attempt registry request try #3 at 6:20:23 PM
+141 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/chai
+142 info attempt registry request try #3 at 6:20:23 PM
+143 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-run
+144 info attempt registry request try #3 at 6:20:23 PM
+145 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/gulp
+146 info attempt registry request try #3 at 6:20:23 PM
+147 http request GET http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-watch
+148 silly get cb [ 304, undefined ]
+149 silly fetchPackageMetaData Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+149 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+149 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+149 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+149 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+149 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+149 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+149 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+149 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+149 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+149 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+149 silly fetchPackageMetaData  error for grunt@^0.4.5 Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+149 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+149 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+149 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+149 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+149 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+149 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+149 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+149 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+149 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+149 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+150 silly fetchPackageMetaData Error: connect ETIMEDOUT 201.7.191.90:80
+150 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:949:11)
+150 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:972:20)
+150 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1080:14)
+150 silly fetchPackageMetaData  error for mocha-phantomjs@4.0.2 { Error: connect ETIMEDOUT 201.7.191.90:80
+150 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:949:11)
+150 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:972:20)
+150 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1080:14)
+150 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+150 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+150 silly fetchPackageMetaData   syscall: 'connect',
+150 silly fetchPackageMetaData   address: '201.7.191.90',
+150 silly fetchPackageMetaData   port: 80 }
+151 silly get cb [ 304, undefined ]
+152 silly fetchPackageMetaData Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-uglify
+152 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+152 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+152 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+152 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+152 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+152 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+152 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+152 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+152 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+152 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+152 silly fetchPackageMetaData  error for grunt-contrib-uglify@^0.11.0 Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-uglify
+152 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+152 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+152 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+152 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+152 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+152 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+152 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+152 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+152 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+152 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+153 silly get cb [ 304, undefined ]
+154 silly fetchPackageMetaData Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-watch
+154 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+154 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+154 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+154 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+154 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+154 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+154 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+154 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+154 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+154 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+154 silly fetchPackageMetaData  error for grunt-contrib-watch@^0.6.1 Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt-contrib-watch
+154 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+154 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+154 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+154 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+154 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+154 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+154 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+154 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+154 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+154 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+155 silly get cb [ 304, undefined ]
+156 silly fetchPackageMetaData Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/gulp
+156 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+156 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+156 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+156 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+156 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+156 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+156 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+156 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+156 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+156 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+156 silly fetchPackageMetaData  error for gulp@^3.9.0 Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/gulp
+156 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+156 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+156 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+156 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+156 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+156 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+156 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+156 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+156 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+156 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+157 silly fetchPackageMetaData Error: connect ETIMEDOUT 201.7.191.90:80
+157 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:949:11)
+157 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:972:20)
+157 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1080:14)
+157 silly fetchPackageMetaData  error for grunt-run@^0.5.2 { Error: connect ETIMEDOUT 201.7.191.90:80
+157 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:949:11)
+157 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:972:20)
+157 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1080:14)
+157 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+157 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+157 silly fetchPackageMetaData   syscall: 'connect',
+157 silly fetchPackageMetaData   address: '201.7.191.90',
+157 silly fetchPackageMetaData   port: 80 }
+158 silly get cb [ 304, undefined ]
+159 silly fetchPackageMetaData Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/chai
+159 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+159 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+159 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+159 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+159 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+159 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+159 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+159 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+159 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+159 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+159 silly fetchPackageMetaData  error for chai@3.4.1 Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/chai
+159 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+159 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+159 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+159 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+159 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+159 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+159 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+159 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+159 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+159 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+160 silly get cb [ 304, undefined ]
+161 silly fetchPackageMetaData Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha
+161 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+161 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+161 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+161 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+161 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+161 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+161 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+161 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+161 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+161 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+161 silly fetchPackageMetaData  error for mocha@2.3.4 Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/mocha
+161 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+161 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+161 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+161 silly fetchPackageMetaData     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+161 silly fetchPackageMetaData     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+161 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+161 silly fetchPackageMetaData     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+161 silly fetchPackageMetaData     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+161 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+161 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+162 silly rollbackFailedOptional Starting
+163 silly rollbackFailedOptional Finishing
+164 silly runTopLevelLifecycles Starting
+165 silly runTopLevelLifecycles Finishing
+166 silly install printInstalled
+167 verbose stack Error: failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+167 verbose stack     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:158:27
+167 verbose stack     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+167 verbose stack     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+167 verbose stack     at /Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+167 verbose stack     at f (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+167 verbose stack     at CachingRegistryClient.<anonymous> (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:186:20)
+167 verbose stack     at Request._callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:163:20)
+167 verbose stack     at self.callback (/Users/raphael.amorim/.nvm/versions/node/v6.1.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+167 verbose stack     at emitOne (events.js:101:20)
+167 verbose stack     at Request.emit (events.js:188:7)
+168 verbose cwd /Users/raphael.amorim/Documents/gcom/aaa/nautilus
+169 error Darwin 15.5.0
+170 error argv "/Users/raphael.amorim/.nvm/versions/node/v6.1.0/bin/node" "/Users/raphael.amorim/.nvm/versions/node/v6.1.0/bin/npm" "i"
+171 error node v6.1.0
+172 error npm  v3.8.6
+173 error failed to fetch from registry: http://artifactory.globoi.com/artifactory/api/npm/npm-repos/grunt
+174 error If you need help, you may report this error at:
+174 error     <https://github.com/npm/npm/issues>
+175 verbose exit [ 1, true ]
