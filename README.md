@@ -1,6 +1,6 @@
 # Nautilus.js
 
-> Async JavaScript loader & dependency manager
+> Async JavaScript loader & dependency manager in less than 2kb
 
 ## Why?
 

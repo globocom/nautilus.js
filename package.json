@@ -2,7 +2,7 @@
   "name": "nautilus",
   "version": "0.0.1",
   "description": "Async JavaScript loader & dependency manager",
-  "main": "nautilus.min.js",
+  "main": "nautilus.js",
   "scripts": {
     "test": "grunt",
     "test:only": "./node_modules/mocha-phantomjs/bin/mocha-phantomjs test/*.html"
@@ -19,7 +19,7 @@
     "namespace"
   ],
   "author": "Raphael Amorim",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/raphamorim/nautilus.js/issues"
   },
