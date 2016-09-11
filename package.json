@@ -1,5 +1,5 @@
 {
-  "name": "nautilus",
+  "name": "nautilusjs",
   "version": "0.0.1",
   "description": "Async JavaScript loader & dependency manager",
   "main": "nautilus.js",
