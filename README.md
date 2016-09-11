@@ -32,7 +32,7 @@ Middle School - loads as non-blocking, however if you are predisposed to use an 
 </script>
 ```
 
-New School - loads as non-blocking too, hower Nautilus.js doesn't care if it's a anonymous define, have unexported module or things like that. 
+New School - loads as non-blocking too, however Nautilus.js doesn't care if it's a anonymous define, have unexported module or things like that. 
 
 ```html
 <script>
