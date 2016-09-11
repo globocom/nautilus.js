@@ -16,5 +16,8 @@ var queue = {
 				curr.exec();
 			}
 		}
+	},
+	reset: function() {
+		this.queues = [];
 	}
-};
+}

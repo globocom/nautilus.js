@@ -23,4 +23,4 @@ var _ = {
 		}
 		return obj3;
 	}
-};
+}

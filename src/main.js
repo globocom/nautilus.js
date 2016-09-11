@@ -25,7 +25,7 @@ function loadScript(path, currentQueue) {
 			path
 		);
 	}
-};
+}
 
 function fetch(paths, fn) {
 	if (typeof(paths) === 'string') {
@@ -35,12 +35,23 @@ function fetch(paths, fn) {
 	var q = queue.push(paths.length, 0, fn);
 	for (var i = 0; i < paths.length; i++) {
 		var path = paths[i];
-		loadScript(self.paths[path] || path, q);
+		loadScript(uPaths[path] || path, q);
 	}
 }
 
 this.config = function(settings) {
 	if (typeof(settings.paths) === 'object') {
-		self.paths = _.merge(self.paths, settings.paths);
+		uPaths = _.merge(uPaths, settings.paths);
 	}
+}
+
+this.getConfig = function() {
+	return {
+		paths: uPaths
+	}
+}
+
+this.resetConfig = function() {
+	uPaths = {};
+	queue.reset();
 }

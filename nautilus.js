@@ -1,10 +1,10 @@
 (function(root, factory) {
 	root.nautilus = factory;
 }(this, function nautilus() {
-this.paths = {};
-
 var self = this,
 	hasOwn = Object.prototype.hasOwnProperty;
+
+var uPaths = {};
 var _ = {
 	extends: function(a, b, undefOnly) {
 		for (var prop in b) {
@@ -30,7 +30,7 @@ var _ = {
 		}
 		return obj3;
 	}
-};
+}
 var queue = {
 	queues: [],
 	push: function(lenPaths, lenLoaded, fn) {
@@ -49,8 +49,11 @@ var queue = {
 				curr.exec();
 			}
 		}
+	},
+	reset: function() {
+		this.queues = [];
 	}
-};
+}
 function loadScript(path, currentQueue) {
 	var scr = document.createElement('script');
 
@@ -78,7 +81,7 @@ function loadScript(path, currentQueue) {
 			path
 		);
 	}
-};
+}
 
 function fetch(paths, fn) {
 	if (typeof(paths) === 'string') {
@@ -88,14 +91,25 @@ function fetch(paths, fn) {
 	var q = queue.push(paths.length, 0, fn);
 	for (var i = 0; i < paths.length; i++) {
 		var path = paths[i];
-		loadScript(self.paths[path] || path, q);
+		loadScript(uPaths[path] || path, q);
 	}
 }
 
 this.config = function(settings) {
 	if (typeof(settings.paths) === 'object') {
-		self.paths = _.merge(self.paths, settings.paths);
+		uPaths = _.merge(uPaths, settings.paths);
 	}
+}
+
+this.getConfig = function() {
+	return {
+		paths: uPaths
+	}
+}
+
+this.resetConfig = function() {
+	uPaths = {};
+	queue.reset();
 }
 return _.extends(fetch.bind(this), this);
 }()));
