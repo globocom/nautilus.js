@@ -8,7 +8,7 @@
 
 `- "New is always better", Barney Stinson`
 
-Old School - blocks CSS, Images, AND JS
+Old School - blocks CSS, Images and JavaScript
 
 
 ```html
@@ -17,24 +17,24 @@ Old School - blocks CSS, Images, AND JS
 <script src="my-app-that-uses-plugin.js"></script>
 ```
 
-Middle School - loads as non-blocking, however if you are predisposed to use an architecture as AMD or commonjs, all other scripts (and this includes plugins) must adapt.
+Middle School - loads as non-blocking, however if have to use an API definition as AMD or commonjs. It'll afect all the other scripts (including plugins).
 
 ```html
 
 <script>
-	require(['jquery'], function($) {
-  		console.log($); // function (a,b){return new n.fn.init(a,b)}
+require(['jquery'], function($) {
+    console.log($); // function (a,b){return new n.fn.init(a,b)}
 
-  		require(['my-jquery-plugin'], function() {
-  			/*
-  				If this jquery plugin is a anonymous define, it'll show a error: Mismatched anonymous define() module...
-  			*/
-  		});
-	});
+    require(['my-jquery-plugin'], function() {
+      /*
+        If jquery plugin have a anonymous define, throw a error: Mismatched anonymous define() module...
+      */
+    });
+});
 </script>
 ```
 
-New School - loads as non-blocking too, however Nautilus.js doesn't care if it's a anonymous define, have unexported module or things like that. 
+New School - loads as non-blocking too, however Nautilus.js doesn't care if it's a anonymous define, have unexported module or things like that.
 
 ```html
 <script>
