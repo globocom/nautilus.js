@@ -4,6 +4,8 @@
   "description": "Async JavaScript loader & dependency manager",
   "main": "nautilus.js",
   "scripts": {
+    "coverage": "./node_modules/.bin/istanbul cover grunt test --report lcovonly -- -R spec",
+    "ci": "npm run-script coverage && node ./node_modules/coveralls/bin/coveralls.js < coverage/lcov.info && rm -rf ./coverage",
     "test": "grunt",
     "test:only": "./node_modules/mocha-phantomjs/bin/mocha-phantomjs test/*.html"
   },
@@ -26,12 +28,14 @@
   "homepage": "https://github.com/raphamorim/nautilus.js#readme",
   "devDependencies": {
     "chai": "3.4.1",
+    "coveralls": "^2.11.6",
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^0.11.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-run": "^0.5.2",
     "gulp": "^3.9.0",
+    "istanbul": "^0.4.2",
     "mocha": "2.3.4",
     "mocha-phantomjs": "4.0.2"
   }

@@ -2,6 +2,8 @@
 
 > Async JavaScript loader & dependency manager in less than 2kb
 
+[![Coverage Status](https://coveralls.io/repos/github/raphamorim/nautilus.js/badge.svg?branch=master)](https://coveralls.io/github/raphamorim/nautilus.js?branch=master)
+
 ## Why?
 
 `- "New is always better", Barney Stinson`
