@@ -1,6 +1,6 @@
 # Nautilus.js
 
-> Async JavaScript loader & dependency manager in less than 2kb
+> Async JavaScript loader & dependency manager in ~1kb
 
 [![Coverage Status](https://coveralls.io/repos/github/raphamorim/nautilus.js/badge.svg?branch=master)](https://coveralls.io/github/raphamorim/nautilus.js?branch=master)
 
@@ -57,3 +57,18 @@ New School - loads as non-blocking too, however Nautilus.js doesn't care if it's
 
 Nautilus can define namespaces to script paths/links and you can manage easily.
 
+## Getting
+
+First of all, get Nautilus.js using [Download Option](https://github.com/raphamorim/nautilus.js/archive/master.zip) or via package manage.
+
+To get using [Bower](http://bower.io) just run this command
+
+```sh
+bower install nautilusjs
+```
+
+Or get using NPM just run this command
+
+```sh
+npm install nautilusjs
+```
