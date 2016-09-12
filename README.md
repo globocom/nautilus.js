@@ -53,7 +53,7 @@ New School - loads as non-blocking too, however Nautilus.js doesn't care if it's
 </script>
 ```
 
-## What's the biggest difference about the [current top script loaders](http://www.creativebloq.com/javascript/essential-javascript-top-five-script-loaders-8122862)?
+#### What's the biggest difference about the [current top script loaders](http://www.creativebloq.com/javascript/essential-javascript-top-five-script-loaders-8122862)?
 
 Nautilus can define namespaces to script paths/links and you can manage easily.
 
@@ -71,4 +71,26 @@ Or get using NPM just run this command
 
 ```sh
 npm install nautilusjs
+```
+
+## Usage
+
+To define specified paths, you must to use config method:
+
+```js
+nautilus.config({
+    paths: {
+        'jquery': 'libs/jquery',
+        'waterfall': 'http://cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js'
+    }
+});
+```
+
+To start scripts asynchronous load:
+
+```js
+nautilus(['jquery', 'waterfall'], function() {
+    console.log($); // function (a,b){return new n.fn.init(a,b)}
+    console.log(typeof(waterfall)); // 'function'
+});
 ```
