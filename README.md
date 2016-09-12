@@ -8,7 +8,9 @@
 
 `- "New is always better", Barney Stinson`
 
-Old School - blocks CSS, Images and JavaScript
+**Old School**
+***
+blocks CSS, Images and JavaScript.
 
 
 ```html
@@ -17,10 +19,12 @@ Old School - blocks CSS, Images and JavaScript
 <script src="my-app-that-uses-plugin.js"></script>
 ```
 
-Middle School - loads as non-blocking, however if have to use an API definition as AMD or commonjs. It'll afect all the other scripts (including plugins).
+**Middle School**
+***
+loads as non-blocking, however if have to use an API definition as AMD or commonjs. It'll affect all the other scripts (including plugins).
 
 ```html
-
+<!-- AMD LOADER EXAMPLE -->
 <script>
 require(['jquery'], function($) {
     console.log($); // function (a,b){return new n.fn.init(a,b)}
@@ -34,7 +38,9 @@ require(['jquery'], function($) {
 </script>
 ```
 
-New School - loads as non-blocking too, however Nautilus.js doesn't care if it's a anonymous define, have unexported module or things like that.
+**New School**
+***
+loads as non-blocking too, however Nautilus.js doesn't care if it's a anonymous define, have unexported module or things like that.
 
 ```html
 <script>
@@ -61,13 +67,13 @@ Nautilus can define namespaces to script paths/links and you can manage easily.
 
 First of all, get Nautilus.js using [Download Option](https://github.com/raphamorim/nautilus.js/archive/master.zip) or via package manage.
 
-To get using [Bower](http://bower.io) just run this command
+To get using [Bower](http://bower.io) just run this command:
 
 ```sh
 bower install nautilusjs
 ```
 
-Or get using NPM just run this command
+Or get using NPM just run this command:
 
 ```sh
 npm install nautilusjs
