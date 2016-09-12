@@ -63,7 +63,7 @@ function loadScript(path, currentQueue) {
 	scr.onreadystatechange = handleReadyStateChange;
 	scr.onerror = handleError;
 	scr.src = path;
-	document.body.appendChild(scr);
+	document.head.appendChild(scr);
 
 	function handleLoad() {
 		queue.inc(currentQueue);
