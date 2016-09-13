@@ -65,7 +65,7 @@ Nautilus can define namespaces to script paths/links and you can manage easily.
 
 ## Getting
 
-First of all, get Nautilus.js using [Download Option](https://github.com/raphamorim/nautilus.js/archive/master.zip) or via package manage.
+First of all, get Nautilus.js using [Download Option](https://github.com/raphamorim/nautilus.js/archive/master.zip) or via package manager.
 
 To get using [Bower](http://bower.io) just run this command:
 
