@@ -1,0 +1,1 @@
+window.dep1 = "dep1";
