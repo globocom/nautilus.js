@@ -21,7 +21,7 @@ blocks CSS, Images and JavaScript.
 
 **Middle School**
 ***
-loads as non-blocking, however if have to use an API definition as AMD or commonjs. It'll affect all the other scripts (including plugins).
+loads as non-blocking, however one has to use an API definition as AMD or commonjs. This affects all the other scripts (including plugins).
 
 ```html
 <!-- AMD LOADER EXAMPLE -->
@@ -81,7 +81,7 @@ npm install nautilusjs
 
 ## Usage
 
-To define specified paths, you must to use config method:
+To define specified paths, you must use the config method:
 
 ```js
 nautilus.config({
