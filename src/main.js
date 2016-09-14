@@ -10,7 +10,7 @@ function loadScript(path, currentQueue) {
 	document.head.appendChild(scr);
 
 	function handleLoad() {
-		queue.inc(currentQueue);
+		queue.incr(currentQueue);
 	}
 
 	function handleReadyStateChange() {

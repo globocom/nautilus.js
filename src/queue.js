@@ -8,7 +8,7 @@ var queue = {
 		});
 		return this.queues.length - 1;
 	},
-	inc: function(queueIndex) {
+	incr: function(queueIndex) {
 		var curr = this.queues[queueIndex];
 		curr.loaded += 1;
 		if (curr.paths <= curr.loaded) {
