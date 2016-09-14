@@ -21,7 +21,7 @@ blocks CSS, Images and JavaScript.
 
 **Middle School**
 ***
-loads as non-blocking, however if have to use an API definition as AMD or commonjs. It'll affect all the other scripts (including plugins).
+loads as non-blocking, however one has to use an API definition as AMD or commonjs. This affects all the other scripts (including plugins).
 
 ```html
 <!-- AMD LOADER EXAMPLE -->
@@ -31,7 +31,7 @@ require(['jquery'], function($) {
 
     require(['my-jquery-plugin'], function() {
       /*
-        If jquery plugin have a anonymous define, throw a error: Mismatched anonymous define() module...
+        If jquery plugin has an anonymous define, throw an error: Mismatched anonymous define() module...
       */
     });
 });
@@ -40,7 +40,7 @@ require(['jquery'], function($) {
 
 **New School**
 ***
-loads as non-blocking too, however Nautilus.js doesn't care if it's a anonymous define, have unexported module or things like that.
+loads as non-blocking too, however Nautilus.js doesn't care if it's an anonymous define, has unexported module or things like that.
 
 ```html
 <script>
@@ -65,7 +65,7 @@ Nautilus can define namespaces to script paths/links and you can manage easily.
 
 ## Getting
 
-First of all, get Nautilus.js using [Download Option](https://github.com/raphamorim/nautilus.js/archive/master.zip) or via package manage.
+First of all, get Nautilus.js using [Download Option](https://github.com/raphamorim/nautilus.js/archive/master.zip) or via package manager.
 
 To get using [Bower](http://bower.io) just run this command:
 
@@ -81,7 +81,7 @@ npm install nautilusjs
 
 ## Usage
 
-To define specified paths, you must to use config method:
+To define specified paths, you must use the config method:
 
 ```js
 nautilus.config({
