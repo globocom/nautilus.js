@@ -1,14 +1,14 @@
 var queue = {
 	queues: [],
-	push: function(lenPaths, lenLoaded, fn) {
+	push: function(lenPaths, fn) {
 		this.queues.push({
 			paths: lenPaths,
-			loaded: lenLoaded,
+			loaded: 0,
 			exec: fn
 		});
 		return this.queues.length - 1;
 	},
-	inc: function(queueIndex) {
+	incr: function(queueIndex) {
 		var curr = this.queues[queueIndex];
 		curr.loaded += 1;
 		if (curr.paths <= curr.loaded) {
