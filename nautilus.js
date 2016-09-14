@@ -33,10 +33,10 @@ var _ = {
 }
 var queue = {
 	queues: [],
-	push: function(lenPaths, lenLoaded, fn) {
+	push: function(lenPaths, fn) {
 		this.queues.push({
 			paths: lenPaths,
-			loaded: lenLoaded,
+			loaded: 0,
 			exec: fn
 		});
 		return this.queues.length - 1;
@@ -88,7 +88,7 @@ function fetch(paths, fn) {
 		paths = [paths];
 	}
 
-	var q = queue.push(paths.length, 0, fn);
+	var q = queue.push(paths.length, fn);
 	for (var i = 0; i < paths.length; i++) {
 		var path = paths[i];
 		loadScript(uPaths[path] || path, q);

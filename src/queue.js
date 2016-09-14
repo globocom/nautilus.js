@@ -1,9 +1,9 @@
 var queue = {
 	queues: [],
-	push: function(lenPaths, lenLoaded, fn) {
+	push: function(lenPaths, fn) {
 		this.queues.push({
 			paths: lenPaths,
-			loaded: lenLoaded,
+			loaded: 0,
 			exec: fn
 		});
 		return this.queues.length - 1;

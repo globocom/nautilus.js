@@ -32,7 +32,7 @@ function fetch(paths, fn) {
 		paths = [paths];
 	}
 
-	var q = queue.push(paths.length, 0, fn);
+	var q = queue.push(paths.length, fn);
 	for (var i = 0; i < paths.length; i++) {
 		var path = paths[i];
 		loadScript(uPaths[path] || path, q);
