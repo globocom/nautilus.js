@@ -31,7 +31,7 @@ require(['jquery'], function($) {
 
     require(['my-jquery-plugin'], function() {
       /*
-        If jquery plugin have an anonymous define, throw an error: Mismatched anonymous define() module...
+        If jquery plugin has an anonymous define, throw an error: Mismatched anonymous define() module...
       */
     });
 });
@@ -40,7 +40,7 @@ require(['jquery'], function($) {
 
 **New School**
 ***
-loads as non-blocking too, however Nautilus.js doesn't care if it's an anonymous define, have unexported module or things like that.
+loads as non-blocking too, however Nautilus.js doesn't care if it's an anonymous define, has unexported module or things like that.
 
 ```html
 <script>
