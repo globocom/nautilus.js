@@ -43,4 +43,18 @@ describe('Fetch', function() {
             });
         });
     });
+    describe('synchronous queue load', function() {
+        context('testing one synchronous request in order', function() {
+            it('should execute callback on success and the scripts on head end', function(done) {
+                window.dep0 = undefined;
+                window.dep1 = undefined;
+                expect(window.dep0).to.be.equal(undefined);
+                nautilus(['fixtures/dep0.js'], ['fixtures/subdep0.js'], function() {
+                    expect(window.dep0).to.be.equal("dep0");
+                    expect(window.subdep0).to.be.equal("dep0");
+                    done();
+                });
+            });
+        });
+    });
 });

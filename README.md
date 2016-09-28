@@ -46,8 +46,8 @@ loads as non-blocking too, however Nautilus.js doesn't care if it's an anonymous
 <script>
 	nautilus.config({
 		paths: {
-			'jquery': 'libs/jquery',
-			'jquery.nanoscroller': 'libs/jquery-nanoscroller',
+			'jquery': 'libs/jquery.js',
+			'jquery.nanoscroller': 'libs/jquery-nanoscroller.js',
 			'waterfall': 'http://cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js'
 		}
 	});
@@ -86,7 +86,7 @@ To define specified paths, you must use the config method:
 ```js
 nautilus.config({
     paths: {
-        'jquery': 'libs/jquery',
+        'jquery': 'libs/jquery.js',
         'waterfall': 'http://cdnjs.cloudflare.com/ajax/libs/waterfall.js/1.0.2/waterfall.min.js'
     }
 });

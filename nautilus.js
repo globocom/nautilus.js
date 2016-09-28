@@ -57,7 +57,7 @@ var queue = {
 function loadScript(path, currentQueue) {
 	var scr = document.createElement('script');
 
-	scr.type = "text/javascript";
+	scr.type = 'text/javascript';
 	scr.onload = handleLoad;
 	scr.async = true;
 	scr.onreadystatechange = handleReadyStateChange;
@@ -70,7 +70,7 @@ function loadScript(path, currentQueue) {
 	}
 
 	function handleReadyStateChange() {
-		if (scr.readyState === "complete") {
+		if (scr.readyState === 'complete') {
 			handleLoad();
 		}
 	}
@@ -83,12 +83,16 @@ function loadScript(path, currentQueue) {
 	}
 }
 
-function fetch(paths, fn) {
+function fetch(paths, depsOrFn, fn) {
 	if (typeof(paths) === 'string') {
 		paths = [paths];
 	}
 
-	var q = queue.push(paths.length, fn);
+	if (Object.prototype.toString.call(depsOrFn) === '[object Array]') {
+		depsOrFn = fetch.bind(this, depsOrFn, fn);
+	}
+
+	var q = queue.push(paths.length, depsOrFn);
 	for (var i = 0; i < paths.length; i++) {
 		var path = paths[i];
 		loadScript(uPaths[path] || path, q);
