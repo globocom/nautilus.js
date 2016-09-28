@@ -1,15 +1,13 @@
 # Nautilus.js
 
-> Async JavaScript loader & dependency manager in ~1kb
+> Async JavaScript loader & dependency manager in ~1kb (600B gziped)
 
 [![Coverage Status](https://coveralls.io/repos/github/raphamorim/nautilus.js/badge.svg?branch=master)](https://coveralls.io/github/raphamorim/nautilus.js?branch=master)
 
 ## Why?
 
-`- "New is always better", Barney Stinson`
+####Old School
 
-**Old School**
-***
 blocks CSS, Images and JavaScript.
 
 
@@ -19,8 +17,8 @@ blocks CSS, Images and JavaScript.
 <script src="my-app-that-uses-plugin.js"></script>
 ```
 
-**Middle School**
-***
+####Middle School
+
 loads as non-blocking, however one has to use an API definition as AMD or commonjs. This affects all the other scripts (including plugins).
 
 ```html
@@ -38,8 +36,8 @@ require(['jquery'], function($) {
 </script>
 ```
 
-**New School**
-***
+####New School
+
 loads as non-blocking too, however Nautilus.js doesn't care if it's an anonymous define, has unexported module or things like that.
 
 ```html
@@ -61,7 +59,7 @@ loads as non-blocking too, however Nautilus.js doesn't care if it's an anonymous
 
 #### What's the biggest difference about the [current top script loaders](http://www.creativebloq.com/javascript/essential-javascript-top-five-script-loaders-8122862)?
 
-Nautilus can define namespaces to script paths/links and you can manage easily.
+Nautilus can define namespaces to script paths/links and you can manage easily. Besides 7~20x more lighter.
 
 ## Getting
 
@@ -100,3 +98,10 @@ nautilus(['jquery', 'waterfall'], function() {
     console.log(typeof(waterfall)); // 'function'
 });
 ```
+
+## Browser Support
+
+| <img src="http://raphamorim.io/assets/images/browser-support/chrome.png" width="100px" height="100px" alt="Chrome logo"> | <img src="http://raphamorim.io/assets/images/browser-support/firefox.png" width="100px" height="100px" alt="Firefox logo"> | <img src="http://raphamorim.io/assets/images/browser-support/ie.png" width="100px" height="100px" alt="Internet Explorer logo"> | <img src="http://raphamorim.io/assets/images/browser-support/opera.png" width="100px" height="100px" alt="Opera logo"> | <img src="http://raphamorim.io/assets/images/browser-support/safari.png" width="100px" height="100px" alt="Safari logo"> |
+|:---:|:---:|:---:|:---:|:---:|
+| 35+ ✔ | 38+ ✔ | 9+ ✔ | 29+ ✔ |  8+ ✔ |
+
