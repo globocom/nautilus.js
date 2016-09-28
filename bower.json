@@ -1,0 +1,26 @@
+{
+  "name": "nautilusjs",
+  "version": "0.0.4",
+  "homepage": "https://github.com/raphamorim/nautilus.js",
+  "authors": [
+    "Raphael Amorim <rapha850@gmail.com>"
+  ],
+  "ignore": [
+    "test",
+    ".gitignore",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "description": "Async JavaScript loader & dependency manager in ~600B [gziped]",
+  "main": "nautilusjs.js",
+  "keywords": [
+    "async",
+    "loader",
+    "dependency",
+    "manager",
+    "namespace"
+  ],
+  "license": "Apache-2.0"
+}
