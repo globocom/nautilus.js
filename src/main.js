@@ -27,16 +27,22 @@ function loadScript(path, currentQueue) {
 	}
 }
 
-function fetch(paths, depsOrFn, fn) {
+function fetchBuiltIn(arr) {
+    fetch.apply(this, arr)
+}
+
+function fetch() {
+    var args = Array.prototype.slice.call(arguments);
+    var paths = args[0];
 	if (typeof(paths) === 'string') {
 		paths = [paths];
 	}
 
-	if (Object.prototype.toString.call(depsOrFn) === '[object Array]') {
-		depsOrFn = fetch.bind(this, depsOrFn, fn);
+	if (Object.prototype.toString.call(args[1]) === '[object Array]') {
+		args[1] = fetchBuiltIn.bind(this, args.slice(1, args.length));
 	}
 
-	var q = queue.push(paths.length, depsOrFn);
+	var q = queue.push(paths.length, args[1]);
 	for (var i = 0; i < paths.length; i++) {
 		var path = paths[i];
 		loadScript(uPaths[path] || path, q);
