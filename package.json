@@ -1,6 +1,6 @@
 {
   "name": "nautilusjs",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Async JavaScript loader & dependency manager",
   "main": "nautilus.js",
   "scripts": {
