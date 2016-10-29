@@ -4,6 +4,8 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/raphamorim/nautilus.js/badge.svg?branch=master)](https://coveralls.io/github/raphamorim/nautilus.js?branch=master)
 
+Used by [G1's globocom](http://g1.globo.com), [Jusbrasil](http://www.jusbrasil.com.br/home)
+
 ## Why?
 
 ####Old School
@@ -105,3 +107,8 @@ nautilus(['jquery', 'waterfall'], function() {
 |:---:|:---:|:---:|:---:|:---:|
 | 35+ ✔ | 38+ ✔ | 9+ ✔ | 29+ ✔ |  8+ ✔ |
 
+## Credits
+
+Maded by [@raphamundi](https://twitter.com/raphamundi) and awesome [contributors](https://github.com/raphamorim/nautilus.js/graphs/contributors)
+
+License: MIT
