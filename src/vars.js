@@ -1,4 +1,4 @@
 var self = this,
-	hasOwn = Object.prototype.hasOwnProperty;
+  hasOwn = Object.prototype.hasOwnProperty;
 
 var uPaths = {};
