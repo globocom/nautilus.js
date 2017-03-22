@@ -8,7 +8,7 @@ Used by [G1's globocom](http://g1.globo.com), [Jusbrasil](http://www.jusbrasil.c
 
 ## Why?
 
-####Old School
+#### Old School
 
 blocks CSS, Images and JavaScript.
 
@@ -19,7 +19,7 @@ blocks CSS, Images and JavaScript.
 <script src="my-app-that-uses-plugin.js"></script>
 ```
 
-####Middle School
+#### Middle School
 
 loads as non-blocking, however one has to use an API definition as AMD or commonjs. This affects all the other scripts (including plugins).
 
@@ -38,7 +38,7 @@ require(['jquery'], function($) {
 </script>
 ```
 
-####New School
+#### New School
 
 loads as non-blocking too, however Nautilus.js doesn't care if it's an anonymous define, has unexported module or things like that.
 
