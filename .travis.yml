@@ -1,7 +1,8 @@
 sudo: false
 language: node_js
 node_js:
-  - "5.5"
+  - stable
+  - 5
 script:
   - "npm run ci"
 before_install:
