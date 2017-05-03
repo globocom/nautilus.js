@@ -1,4 +1,4 @@
-var queue = {
+const queue = {
   queues: [],
   push: function (lenPaths, fn) {
     this.queues.push({
@@ -9,7 +9,7 @@ var queue = {
     return this.queues.length - 1;
   },
   incr: function (queueIndex) {
-    var curr = this.queues[queueIndex];
+    const curr = this.queues[queueIndex];
     curr.loaded += 1;
     if (curr.paths <= curr.loaded) {
       if (typeof curr.exec === 'function') {

@@ -1,5 +1,5 @@
 function loadScript(path, currentQueue) {
-  var scr = document.createElement('script');
+  const scr = document.createElement('script');
 
   scr.type = 'text/javascript';
   scr.onload = handleLoad;
@@ -32,8 +32,8 @@ function fetchBuiltIn(arr) {
 }
 
 function fetch() {
-  var args = Array.prototype.slice.call(arguments);
-  var paths = args[0];
+  const args = Array.prototype.slice.call(arguments);
+  const paths = args[0];
   if (typeof(paths) === 'string') {
     paths = [paths];
   }
@@ -42,9 +42,9 @@ function fetch() {
     args[1] = fetchBuiltIn.bind(this, args.slice(1, args.length));
   }
 
-  var q = queue.push(paths.length, args[1]);
-  for (var i = 0; i < paths.length; i++) {
-    var path = paths[i];
+  const q = queue.push(paths.length, args[1]);
+  for (const i = 0; i < paths.length; i++) {
+    const path = paths[i];
     loadScript(uPaths[path] || path, q);
   }
 }
