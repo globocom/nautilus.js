@@ -105,19 +105,17 @@ function fetch() {
 	}
 }
 
-this.config = function(settings) {
+this.config = settings => {
 	if (typeof(settings.paths) === 'object') {
 		uPaths = _.merge(uPaths, settings.paths);
 	}
 }
 
-this.getConfig = function() {
-	return {
-		paths: uPaths
-	}
-}
+this.getConfig = () => ({
+    paths: uPaths
+})
 
-this.resetConfig = function() {
+this.resetConfig = () => {
 	uPaths = {};
 	queue.reset();
 }
