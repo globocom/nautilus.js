@@ -1,4 +1,4 @@
-var self = this,
+const self = this,
   hasOwn = Object.prototype.hasOwnProperty;
 
-var uPaths = {};
+const uPaths = {};

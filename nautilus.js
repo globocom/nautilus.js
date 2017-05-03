@@ -1,13 +1,13 @@
 (function(root, factory) {
 	root.nautilus = factory;
 }(this, function nautilus() {
-var self = this,
+const self = this,
 	hasOwn = Object.prototype.hasOwnProperty;
 
-var uPaths = {};
-var _ = {
+const uPaths = {};
+const _ = {
 	extends: function(a, b, undefOnly) {
-		for (var prop in b) {
+		for (const prop in b) {
 			if (hasOwn.call(b, prop)) {
 				if (prop !== "constructor" || a !== global) {
 					if (b[prop] === undefined) {
@@ -21,17 +21,17 @@ var _ = {
 		return a;
 	},
 	merge: function(obj1, obj2) {
-		var obj3 = {};
-		for (var attrname in obj1) {
+		const obj3 = {};
+		for (const attrname in obj1) {
 			obj3[attrname] = obj1[attrname];
 		}
-		for (var attrname in obj2) {
+		for (const attrname in obj2) {
 			obj3[attrname] = obj2[attrname];
 		}
 		return obj3;
 	}
 }
-var queue = {
+const queue = {
 	queues: [],
 	push: function(lenPaths, fn) {
 		this.queues.push({
@@ -42,7 +42,7 @@ var queue = {
 		return this.queues.length - 1;
 	},
 	incr: function(queueIndex) {
-		var curr = this.queues[queueIndex];
+		const curr = this.queues[queueIndex];
 		curr.loaded += 1;
 		if (curr.paths <= curr.loaded) {
 			if (typeof curr.exec === 'function') {
@@ -55,7 +55,7 @@ var queue = {
 	}
 }
 function loadScript(path, currentQueue) {
-	var scr = document.createElement('script');
+	const scr = document.createElement('script');
 
 	scr.type = 'text/javascript';
 	scr.onload = handleLoad;
@@ -88,8 +88,8 @@ function fetchBuiltIn(arr) {
 }
 
 function fetch() {
-    var args = Array.prototype.slice.call(arguments);
-    var paths = args[0];
+    const args = Array.prototype.slice.call(arguments);
+    const paths = args[0];
 	if (typeof(paths) === 'string') {
 		paths = [paths];
 	}
@@ -98,9 +98,9 @@ function fetch() {
 		args[1] = fetchBuiltIn.bind(this, args.slice(1, args.length));
 	}
 
-	var q = queue.push(paths.length, args[1]);
-	for (var i = 0; i < paths.length; i++) {
-		var path = paths[i];
+	const q = queue.push(paths.length, args[1]);
+	for (const i = 0; i < paths.length; i++) {
+		const path = paths[i];
 		loadScript(uPaths[path] || path, q);
 	}
 }
