@@ -61,7 +61,8 @@ var queue = {
   }
 };
 
-function loadScript(path, currentQueue) {
+function loadScript(config, currentQueue) {
+  var path = config.path;
   var scr = document.createElement('script');
 
   scr.type = 'text/javascript';
@@ -108,7 +109,9 @@ function fetch() {
   var q = queue.push(paths.length, args[1]);
   for (var i = 0; i < paths.length; i++) {
     var path = paths[i];
-    loadScript(uPaths[path] || path, q);
+    loadScript({
+      path: uPaths[path] || path
+    }, q);
   }
 }
 
