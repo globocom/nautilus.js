@@ -38,7 +38,7 @@ function fetch() {
     paths = [paths];
   }
 
-  if (Object.prototype.toString.call(args[1]) === '[object Array]') {
+  if (_.isArray(args[1])) {
     args[1] = fetchBuiltIn.bind(this, args.slice(1, args.length));
   }
 
