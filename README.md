@@ -109,6 +109,6 @@ nautilus(['jquery', 'waterfall'], function() {
 
 ## Credits
 
-Maded by [@raphamundi](https://twitter.com/raphamundi) and awesome [contributors](https://github.com/raphamorim/nautilus.js/graphs/contributors)
+Made by [@raphamundi](https://twitter.com/raphamundi) and awesome [contributors](https://github.com/raphamorim/nautilus.js/graphs/contributors)
 
 License: MIT
