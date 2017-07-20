@@ -1,4 +1,7 @@
-function loadScript(path, currentQueue) {
+function loadScript(config, currentQueue) {
+  var pathIsArray = _.isArray(config.path);
+  var paths = pathIsArray ? config.path : [];
+  var path = pathIsArray ? config.path[0] : config.path;
   var scr = document.createElement('script');
 
   scr.type = 'text/javascript';
@@ -24,6 +27,11 @@ function loadScript(path, currentQueue) {
       '[nautilus] occurred an error while fetching',
       path
     );
+    if (paths.length > 1) {
+      loadScript({
+        path: paths.slice(1),
+      }, currentQueue);
+    }
   }
 }
 
@@ -38,14 +46,16 @@ function fetch() {
     paths = [paths];
   }
 
-  if (Object.prototype.toString.call(args[1]) === '[object Array]') {
+  if (_.isArray(args[1])) {
     args[1] = fetchBuiltIn.bind(this, args.slice(1, args.length));
   }
 
   var q = queue.push(paths.length, args[1]);
   for (var i = 0; i < paths.length; i++) {
     var path = paths[i];
-    loadScript(uPaths[path] || path, q);
+    loadScript({
+      path: uPaths[path] || path
+    }, q);
   }
 }
 

@@ -57,4 +57,25 @@ describe('Fetch', function() {
             });
         });
     });
+  describe('multiple URLs for same script', function() {
+    context('try to load with fallbacks', function() {
+      it('should load script in last try', function(done) {
+        window.dep0 = undefined;
+        nautilus.config({
+          paths: {
+            dep0: [
+              'nope/dep0.js',
+              'not/here/dep0.js',
+              'fixtures/dep0.js',
+            ],
+          },
+        });
+        nautilus(['dep0'], function() {
+          expect(window.dep0).to.be.equal("dep0");
+          expect(scriptIsPresent('fixtures/dep0.js')).to.be.equal(true);
+          done();
+        });
+      });
+    });
+  });
 });
