@@ -62,7 +62,9 @@ var queue = {
 };
 
 function loadScript(config, currentQueue) {
-  var path = config.path;
+  var pathIsArray = _.isArray(config.path);
+  var paths = pathIsArray ? config.path : [];
+  var path = pathIsArray ? config.path[0] : config.path;
   var scr = document.createElement('script');
 
   scr.type = 'text/javascript';
@@ -88,6 +90,11 @@ function loadScript(config, currentQueue) {
       '[nautilus] occurred an error while fetching',
       path
     );
+    if (paths.length > 1) {
+      loadScript({
+        path: paths.slice(1),
+      }, currentQueue);
+    }
   }
 }
 
