@@ -81,7 +81,7 @@ npm install nautilusjs
 
 ## Usage
 
-To define specified paths, you must use the config method:
+To define specified `paths`, you must use the config method:
 
 ```js
 nautilus.config({
@@ -101,6 +101,23 @@ nautilus(['jquery', 'waterfall'], function() {
 });
 ```
 
+### Optional parameters
+You can also set `origins` for your relative URLs, it will concatenate the origin and the path and try to load once, so if the download fails in the first domain, it will try to download in the second and so on.
+```js
+nautilus.config({
+  origins: ['https://public.cdn.com', 'https://private.cdn.com', 'https://s3.com'],
+  paths: { jquery: '/libs/jquery.min.js' }
+});
+nautilus(['jquery']);
+```
+
+With this it will request the script file in the following URLs:
+1. `https://public.cdn.com/libs/jquery.min.js`
+2. `https://private.cdn.com/libs/jquery.min.js`
+3. `https://s3.com/libs/jquery.min.js`
+4. `/libs/jquery.min.js`
+
+
 ## Browser Support
 
 | <img src="http://raphamorim.io/assets/images/browser-support/chrome.png" width="100px" height="100px" alt="Chrome logo"> | <img src="http://raphamorim.io/assets/images/browser-support/firefox.png" width="100px" height="100px" alt="Firefox logo"> | <img src="http://raphamorim.io/assets/images/browser-support/ie.png" width="100px" height="100px" alt="Internet Explorer logo"> | <img src="http://raphamorim.io/assets/images/browser-support/opera.png" width="100px" height="100px" alt="Opera logo"> | <img src="http://raphamorim.io/assets/images/browser-support/safari.png" width="100px" height="100px" alt="Safari logo"> |
@@ -109,6 +126,6 @@ nautilus(['jquery', 'waterfall'], function() {
 
 ## Credits
 
-Maded by [@raphamundi](https://twitter.com/raphamundi) and awesome [contributors](https://github.com/raphamorim/nautilus.js/graphs/contributors)
+Made by [@raphamundi](https://twitter.com/raphamundi) and awesome [contributors](https://github.com/raphamorim/nautilus.js/graphs/contributors)
 
 License: MIT

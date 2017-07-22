@@ -1,12 +1,15 @@
-function loadScript(path, currentQueue) {
+function loadScript(config, currentQueue) {
+  var origins = config.origins;
+  var path = config.path;
   var scr = document.createElement('script');
+  var useOrigins = origins.length > 0 && !_.isAbsoluteURL(path);
 
   scr.type = 'text/javascript';
   scr.onload = handleLoad;
   scr.async = true;
   scr.onreadystatechange = handleReadyStateChange;
   scr.onerror = handleError;
-  scr.src = path;
+  scr.src = useOrigins ? origins[0] + path : path;
   document.head.appendChild(scr);
 
   function handleLoad() {
@@ -24,6 +27,12 @@ function loadScript(path, currentQueue) {
       '[nautilus] occurred an error while fetching',
       path
     );
+    if (useOrigins) {
+      loadScript({
+        origins: origins.slice(1),
+        path: path,
+      }, currentQueue);
+    }
   }
 }
 
@@ -38,18 +47,24 @@ function fetch() {
     paths = [paths];
   }
 
-  if (Object.prototype.toString.call(args[1]) === '[object Array]') {
+  if (_.isArray(args[1])) {
     args[1] = fetchBuiltIn.bind(this, args.slice(1, args.length));
   }
 
   var q = queue.push(paths.length, args[1]);
   for (var i = 0; i < paths.length; i++) {
     var path = paths[i];
-    loadScript(uPaths[path] || path, q);
+    loadScript({
+      origins: uOrigins,
+      path: uPaths[path] || path
+    }, q);
   }
 }
 
 this.config = function (settings) {
+  if (_.isArray(settings.origins)) {
+    uOrigins = uOrigins.concat(settings.origins);
+  }
   if (typeof(settings.paths) === 'object') {
     uPaths = _.merge(uPaths, settings.paths);
   }
@@ -57,11 +72,13 @@ this.config = function (settings) {
 
 this.getConfig = function () {
   return {
+    origins: uOrigins,
     paths: uPaths
   }
 };
 
 this.resetConfig = function () {
+  uOrigins = [];
   uPaths = {};
   queue.reset();
 };

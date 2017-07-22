@@ -22,5 +22,11 @@ var _ = {
       obj3[attrname] = obj2[attrname];
     }
     return obj3;
+  },
+  isAbsoluteURL: function (url) {
+    return /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(url);
+  },
+  isArray: function (value) {
+    return Object.prototype.toString.call(value) === '[object Array]';
   }
 };

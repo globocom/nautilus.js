@@ -57,4 +57,29 @@ describe('Fetch', function() {
             });
         });
     });
+  describe('origins config parameter', function () {
+    context('test each origin for relative URLs', function () {
+      it('should try to load relative URLs using each origin', function (done) {
+        nautilus.config({
+          paths: {
+            'dep0': '/dep0.js',
+            'dep1': '/dep1.js',
+          },
+          origins: [
+            'fail',
+            'fixtures'
+          ]
+        });
+        window.dep0 = undefined;
+        window.dep1 = undefined;
+        nautilus(['dep0'], ['dep1'], function () {
+          expect(window.dep0).to.be.equal("dep0");
+          expect(window.dep1).to.be.equal("dep1");
+          expect(scriptIsPresent('fixtures/dep0.js')).to.be.equal(true);
+          expect(scriptIsPresent('fixtures/dep1.js')).to.be.equal(true);
+          done();
+        });
+      });
+    });
+  });
 });

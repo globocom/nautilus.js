@@ -1,22 +1,32 @@
 describe('Paths', function() {
+    afterEach(function () {
+        nautilus.resetConfig();
+    });
+
     describe('resetConfig', function() {
         context('reseting a nautilus configuration', function() {
             it('should return reset configuration', function() {
+                expect(nautilus.getConfig().origins.length).to.be.equal(0);
                 expect(Object.keys(nautilus.getConfig()['paths']).length)
                     .to.be.equal(0);
 
                 nautilus.config({
+                    origins: ['https://mydomain.com'],
                     paths: {
                         'someDep': 'dep.js'
                     }
                 });
 
+                expect(nautilus.getConfig().origins)
+                    .to.include('https://mydomain.com');
                 expect(nautilus.getConfig()['paths'])
                     .to.have.all.keys('someDep');
+                expect(nautilus.getConfig().origins.length).to.be.equal(1);
                 expect(Object.keys(nautilus.getConfig()['paths']).length)
                     .to.be.equal(1);
 
                 nautilus.resetConfig();
+                expect(nautilus.getConfig().origins.length).to.be.equal(0);
                 expect(Object.keys(nautilus.getConfig()['paths']).length)
                     .to.be.equal(0);
             });
@@ -104,6 +114,29 @@ describe('Paths', function() {
                 expect(config.paths['jquery']).to.eql(newExpectedPaths['jquery']);
                 expect(config.paths['lodash']).to.eql(expectedPaths['lodash']);
             });
+        });
+    });
+
+    context('add new origin to the list', function () {
+        it('should add a new origin each time config is called', function () {
+            expect(nautilus.getConfig().origins.length).to.be.equal(0);
+
+            nautilus.config({
+                origins: ['https://mydomain.com']
+            });
+
+            expect(nautilus.getConfig().origins.length).to.be.equal(1);
+
+            nautilus.config({
+                origins: ['https://myotherdomain.com']
+            });
+
+            expect(nautilus.getConfig().origins.length).to.be.equal(2);
+
+            expect(nautilus.getConfig().origins).to.include(
+                'https://mydomain.com',
+                'https://myotherdomain.com'
+            );
         });
     });
 });
