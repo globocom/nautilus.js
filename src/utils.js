@@ -1,9 +1,10 @@
 var _ = {
   extends: function (a, b, undefOnly) {
+    var ignoreCall = ['webkitStorageInfo']
     for (var prop in b) {
       if (hasOwn.call(b, prop)) {
         if (prop !== "constructor" || a !== global) {
-          if (b[prop] === undefined) {
+          if (ignoreCall.includes(prop.toString()) || b[prop] === undefined) {
             delete a[prop];
           } else if (!(undefOnly && typeof a[prop] !== "undefined")) {
             a[prop] = b[prop];
