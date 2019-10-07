@@ -29,6 +29,7 @@
   "devDependencies": {
     "chai": "3.4.1",
     "coveralls": "2.11.6",
+    "events": "^3.0.0",
     "grunt": "0.4.5",
     "grunt-contrib-concat": "1.0.1",
     "grunt-contrib-uglify": "0.11.0",
@@ -37,6 +38,8 @@
     "gulp": "3.9.0",
     "istanbul": "0.4.2",
     "mocha": "2.3.4",
-    "mocha-phantomjs": "4.0.2"
-  }
+    "mocha-phantomjs": "4.0.2",
+    "sinon": "^7.5.0"
+  },
+  "dependencies": {}
 }
